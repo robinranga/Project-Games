@@ -16,7 +16,7 @@
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
  
 
 }
@@ -30,6 +30,8 @@
     gap: .8rem;
     justify-content: center;
     align-items: center;
+    margin-left: 200px;
+
 
    
 }
@@ -49,3 +51,13 @@
     align-items: center;
 
 }
+
+.scorecard{
+    background-color: wheat;
+   
+    margin-left: 50px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
