@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #131515;
+  color: white;
+}
+
+#game_name {
+  color: #339989;
+  text-align: center;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 20px;
+}
+
+#instr {
+  color: #7de2d1;
+  text-align: center;
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
+  padding-top: 20px;
+}
+
+.interface {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+input {
+  height: 70px;
+  font-size: 30px;
+  width: 250px;
+  outline: none;
+  color: #fffafb;
+  text-align: center;
+  box-shadow: 0 0 8px #6cae75;
+  border: #6cae75 solid 2px;
+}
+
+#butt {
+  width: 100px;
+  height: 40px;
+  font-size: 25px;
+  border: 2px solid #04724d;
+  background-color: #04724d;
+  border-radius: 6px;
+}
+
+#button-div {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+
+.trials {
+  display: none;
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#trials-cont {
+  color: #b0db43;
+}
+
+#butt2 {
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+  border: 2px solid #531cb3;
+  background-color: #531cb3;
+  border-radius: 6px;
+  color: #fdfdff;
+}
+
+#button2-div {
+  display: none;
+  margin-top: 50px;
+}
+
+#butt3 {
+  width: 100px;
+  height: 40px;
+  font-size: 25px;
+  border: 2px solid #f34213;
+  background-color: #f34213;
+  border-radius: 6px;
+}

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded" , () => {
-    let play_but = document.querySelector("#play_button");
+let play_but = document.querySelector("#play_button");
 
 play_but.addEventListener("mouseover",() => {
     document.querySelector("a").style.boxShadow = "0 0 1rem #32DE8A"
