@@ -85,7 +85,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: #6184d8 2px solid;
   margin: 100px 590px 0 590px;
   height: 80px;
   padding-top: 10px;
