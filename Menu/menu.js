@@ -29,3 +29,10 @@ game_name.forEach((name) => {
         name.style.boxShadow = "none"
     })
 })
+
+var name = localStorage.getItem("userName");
+    if (name) {
+        document.getElementById("greet-cont").textContent = "Welcome, " + name + "!";
+    } else {
+        document.getElementById("greet-cont").textContent = "Welcome, guest!";
+    }

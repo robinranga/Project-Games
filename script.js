@@ -18,7 +18,10 @@ inp_name.addEventListener("click",() => {
 inp_name.addEventListener("blur",() => {
     inp_name.setAttribute("placeholder","What's your name ?")
 })
-
-
-
 })
+
+function savename() {
+    var name = document.getElementById("input_name").value;
+    localStorage.setItem("userName", name);
+    window.location.href = "/Menu/menu.html"; 
+} 
