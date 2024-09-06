@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #090c02;
+  color: white;
+}
+
+#game-name-top {
+  color: #745296;
+  text-align: center;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 20px;
+}
+
+#instr {
+  color: #c2e812;
+  text-align: center;
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
+  padding-top: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.win-msg {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#prop-msg {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+  border: 2px solid #6184d8;
+  background-color: #6184d8;
+  border-radius: 6px;
+  color: #090c02;
+  font-weight: bolder;
+}
+
+.images {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#img1,
+#img2,
+#img3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #d7ffab;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.scorecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: #6184d8 2px solid;
+  margin: 100px 590px 0 590px;
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#player {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  font-size: 30px;
+  color: #c2e812;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.player-cont {
+  color: #c2e812;
+}
+
+.score-cont1 {
+  color: green;
+}
+.score-cont2 {
+  color: red;
+}
+
+#prop-msg {
+  color: #d33f49;
+}
