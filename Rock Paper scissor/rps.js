@@ -78,11 +78,17 @@ const check_win = (user_choice) => {
   prop_msg.innerText = msg;
   document.querySelector(".score-cont1").innerText = user_win;
   document.querySelector(".score-cont2").innerText = bot_win;
+  images.forEach((image) => {
+    image.classList.add("disabled")
+  })
 };
 
 let new_game = document.querySelector("#new-game");
 
 new_game.addEventListener("click", () => {
+  images.forEach((image) => {
+    image.classList.remove("disabled")
+  })
   document.querySelector(".win-msg").style.display = "none";
   scorecard.style.marginTop = "100px";
   random_num = Math.floor(Math.random() * 3);

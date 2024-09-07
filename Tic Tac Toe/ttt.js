@@ -9,21 +9,14 @@ boxes.forEach((box) => {
     if (turnX) {
       box.innerText = "X";
       turnX = false;
-      click++;
+      ++click;
     } else {
       box.innerText = "O";
       turnX = true;
-      click++;
+      ++click;
     }
     box.disabled = true;
     check_win();
-    if (click === 9) {
-      who_win = "It was a draw !";
-      msg.innerText = who_win;
-      msg.style.display = "block";
-      reset.style.display = "none";
-      new_game.style.display = "inline";
-    }
   });
 });
 
@@ -81,6 +74,16 @@ const check_win = () => {
         new_game.style.display = "inline";
         document.querySelector(".score-cont1").innerText = x_win;
         document.querySelector(".score-cont2").innerText = o_win;
+        boxes.forEach((box) => {
+          box.disabled = true;
+          if (click === 9 && who_win === null) {
+            who_win = "It was a draw !";
+            msg.innerText = who_win;
+            msg.style.display = "block";
+            reset.style.display = "none";
+            new_game.style.display = "inline";
+          }
+        });
       }
     }
   });
@@ -92,6 +95,8 @@ reset.addEventListener("click", () => {
     box.innerText = "";
   });
   turnX = true;
+  click = 0;
+  who_win = null;
 });
 
 new_game.addEventListener("mouseover", () => {
@@ -108,6 +113,8 @@ new_game.addEventListener("click", () => {
   boxes.forEach((box) => {
     box.disabled = false;
     box.innerText = "";
+    click = 0;
+    who_win = null;
   });
   turnX = true;
   msg.style.display = "none";

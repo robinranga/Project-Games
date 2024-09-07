@@ -123,3 +123,7 @@ button {
 #prop-msg {
   color: #d33f49;
 }
+
+.disabled {
+  pointer-events: none;
+}
