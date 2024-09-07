@@ -32,7 +32,7 @@ game_name.forEach((name) => {
 
 var name = localStorage.getItem("userName");
     if (name) {
-        document.getElementById("greet-cont").textContent = "Welcome, " + name + "!";
+        document.getElementById("greet-cont").textContent = "Welcome, " + name + " !";
     } else {
-        document.getElementById("greet-cont").textContent = "Welcome, guest!";
+        document.getElementById("greet-cont").textContent = "Welcome, Guest !";
     }
