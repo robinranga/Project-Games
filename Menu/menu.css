@@ -7,31 +7,31 @@
 
 
 
-.greet{
+.greet {
     font-size: 100px;
     display: flex;
     justify-content: center;
     font-family: fantasy;
     margin-top: 10px;
-    
-    
+
+
 }
 
-#greet-cont{
+#greet-cont {
     color: #B7D1DA;
 }
 
-.ask-game{
+.ask-game {
     font-size: 40px;
     display: flex;
     justify-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 20px;
     margin-bottom: 30px;
- 
+
 }
 
-#ask-game-cont{
+#ask-game-cont {
     color: #95A3A4;
 }
 
@@ -40,46 +40,50 @@
     justify-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+
 }
 
-.game-name{
-    font-size:35px;
+.game-name {
+    font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: lighter;
     color: #F0C987;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-a{
+img {
+    height: 250px;
+}
+
+a {
     text-decoration: none;
 }
 
-.footer{
+.footer {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: end;
     height: 100px;
     font-size: 20px;
-    font-family:serif;
+    font-family: serif;
 }
 
 
-.ttt{
+.ttt {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.sps{
+.sps {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.gtn{
+.gtn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,3 +94,66 @@ a{
     border-radius: 50%;
 }
 
+@media screen and (min-width:1280px) {
+    .games {
+        padding-top: 60px;
+    }
+
+    .ask-game {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width:1279px) {
+    .greet {
+        font-size: 70px;
+    }
+
+    .ask-game {
+        font-size: 30px;
+    }
+
+    img {
+        height: 170px
+    }
+
+   
+}
+
+
+@media screen and (max-width:700px) {
+    .greet {
+        font-size: 50px;
+    }
+
+    .ask-game {
+        font-size: 20px;
+    }
+
+    img {
+        height: 120px
+    }
+    .game-name {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:500px) {
+    .greet {
+        font-size: 42px;
+    }
+
+    .ask-game {
+        font-size: 18px;
+    }
+
+    img {
+        height: 150px
+    }
+    .game-name {
+        font-size: 20px;
+    }
+    .games{
+        flex-direction: column;
+        gap: 50px;
+    }
+}

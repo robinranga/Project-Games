@@ -17,29 +17,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 5px;
+  gap: 100px;
 }
 
 .container {
-  height: 70vh;
-  width: 35vw;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  justify-content: center;
-  align-items: center;
-  margin-left: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  grid-template-rows: repeat(3, 130px);
+  gap: 10px;
 }
 
 .box {
-  height: 10vw;
-  width: 10vw;
+  height: 130px;
+  width: 130px;
   background-color: #b8cdf8;
   border-radius: 1rem;
   border: none;
   box-shadow: 0 0 0.7rem #902d41;
-  font-size: 6vw;
+  font-size: 75px;
   font-weight: bolder;
   color: #41463d;
   display: flex;
@@ -51,9 +46,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
+  /* height: 70vh; */
   width: 20vw;
-} 
+}
 
 button {
   width: 100px;
@@ -131,4 +126,164 @@ button {
   text-align: center;
   border-radius: 30px;
   box-shadow: 0 0 1.5rem black;
+}
+
+@media screen and (min-width : 1380px) {
+
+  #game_name {
+    font-size: 7rem;
+  }
+
+  .box {
+    height: 180px;
+    width: 180px;
+    font-size: 110px;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(3, 180px);
+
+  }
+
+  button {
+    width: 189px;
+    height: 63px;
+    font-size: 43px;
+    border-radius: 18px;
+  }
+
+  #new-game {
+    width: 223px;
+    height: 76px;
+    font-size: 38px;
+    border-radius: 29px;
+
+  }
+
+
+  .scorecard {
+    height: 187px;
+    width: 231px;
+  }
+
+  #player {
+    font-size: 50px;
+  }
+
+  #score {
+    font-size: 50px;
+  }
+
+
+  .prop-msg {
+    font-size: 60px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width : 750px) {
+
+  .top_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  button {
+    width: 237px;
+    height: 69px;
+    font-size: 41px;
+    border-radius: 28px;
+  }
+
+  #new-game {
+    width: 246px;
+    height: 86px;
+    font-size: 38px;
+    border-radius: 24px;
+
+
+  }
+
+
+  .scorecard {
+    height: 215px;
+    width: 337px;
+  }
+
+  #player {
+    font-size: 60px;
+  }
+
+  #score {
+    font-size: 60px;
+  }
+
+
+  .prop-msg {
+    font-size: 60px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width : 450px) {
+
+  .top_container {
+    gap: 20px;
+
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    gap: 9px;
+  }
+
+  #game_name {
+    font-size: 4rem;
+  }
+
+  .box {
+    height: 90px;
+    width: 90px;
+    font-size: 50px;
+
+  }
+
+  button {
+    width: 178px;
+    height: 56px;
+    font-size: 36px;
+    border-radius: 19px;
+  }
+
+  #new-game {
+    width: 174px;
+    height: 55px;
+    font-size: 27px;
+    border-radius: 18px;
+
+
+  }
+
+
+  .scorecard {
+    font-size: 47px;
+    width: 237px;
+    height: 148px;
+  }
+
+  #player {
+    font-size: 40px;
+  }
+
+  #score {
+    font-size: 40px;
+  }
+
+
+  .prop-msg {
+    font-size: 60px;
+    width: 300px;
+  }
 }

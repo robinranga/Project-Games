@@ -63,3 +63,17 @@
 a{
     border-radius: 6px;
 }
+
+@media  screen and (max-width:700px) {
+    #greet{
+        font-size: 50px;
+        padding: 5px;
+
+    }
+}
+@media  screen and (max-width:450px) {
+    #greet{
+        font-size: 35px;
+        padding: 10px;
+    }
+}

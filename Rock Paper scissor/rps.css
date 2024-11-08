@@ -85,7 +85,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 100px 590px 0 590px;
+  margin-top: 80px;
   height: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -116,14 +116,194 @@ button {
 .score-cont1 {
   color: green;
 }
+
 .score-cont2 {
   color: red;
 }
 
 #prop-msg {
   color: #d33f49;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .disabled {
   pointer-events: none;
+}
+
+
+@media screen and (min-width:1380px) {
+  #game-name-top {
+    padding: 35px;
+  }
+
+  #instr {
+    padding: 24px;
+  }
+  
+  
+
+  #img1,
+  #img2,
+  #img3 {
+    font-size: 50px;
+  }
+
+  .images{
+    height: 250px;
+    width: 250px;
+  }
+  * {
+    font-size: 25px;
+  }
+
+  .player-cont , .score-cont1 , .score-cont2 {
+    font-size: 50px ;
+  }
+  
+}
+
+@media screen and (max-width:1379px) {
+  #game-name-top {
+    padding: 15px;
+  }
+
+  #img1,
+  #img2,
+  #img3 {
+    font-size: 35px;
+  }
+
+  #instr {
+    padding: 20px;
+  }
+
+  .images{
+    height: 180px;
+    width: 180px;
+  }
+
+  *{
+    font-size: 15px;
+  }
+
+  .player-cont , .score-cont1 , .score-cont2 {
+    font-size: 33px ;
+  }
+
+
+}
+
+
+@media screen and (max-width : 750px) {
+
+
+
+  #game-name-top {
+    padding: 10px;
+  }
+
+  #img1,
+  #img2,
+  #img3 {
+    font-size: 25px;
+  }
+
+  #instr {
+    padding: 10px;
+  }
+
+  .images{
+    height: 120px;
+    width: 120px;
+  }
+
+  *{
+    font-size: 12px;
+  }
+
+  .player-cont , .score-cont1 , .score-cont2 {
+    font-size: 27px ;
+  }
+
+  .scorecard{
+    margin-top: 40px;
+  }
+
+
+  
+}
+
+@media screen and (max-width : 550px) {
+
+  #img1,
+  #img2,
+  #img3 {
+    font-size: 23px;
+  }
+
+  #instr {
+    padding: 5px;
+  }
+
+  .images{
+    height: 100px;
+    width: 100px;
+  }
+
+  *{
+    font-size: 10px;
+  }
+
+  .player-cont , .score-cont1 , .score-cont2 {
+    font-size: 23px ;
+  }
+
+  .scorecard{
+    margin-top: 20px;
+  }
+
+  
+  
+}
+
+@media screen and (max-width : 450px) {
+
+  *{
+    font-size: 7px
+  }
+
+  
+  .player-cont , .score-cont1 , .score-cont2 {
+    font-size: 19px ;
+  }
+
+  .scorecard{
+    margin-top: 20px;
+  }
+
+  #img1,
+  #img2,
+  #img3 {
+    font-size: 20px;
+  }
+
+  #instr {
+    padding: 5px;
+  }
+
+  .images{
+    height: 115px;
+    width: 115px;
+  }
+
+  .choices{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #game-name-top{
+    font-weight:10px ;
+  }
+  
 }

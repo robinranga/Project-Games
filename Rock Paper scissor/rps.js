@@ -36,40 +36,43 @@ images.forEach((image, idx) => {
   });
 });
 
-let msg = null;
 
 let prop_msg = document.querySelector("#prop-msg");
 
 const check_win = (user_choice) => {
+
+  
+  let msg = `Computer choose ${comp_choice} \n`;
+
   if (user_choice === comp_choice) {
-    msg = "It was a Draw !";
-    prop_msg.style.color = "#EFF7FF";
+    msg += "It was a Draw !";
+    prop_msg.style.color = "#b2b9bf";
   } else {
     if (user_choice === "Rock") {
       if (comp_choice === "Scissor") {
-        msg = "Congratulations, You Won !";
+        msg += "Congratulations, You Won !";
         user_win++;
         prop_msg.style.color = "#69B578";
       } else {
-        msg = "Opps, You Lose !";
+        msg += "Opps, You Lose !";
         bot_win++;
       }
     } else if (user_choice === "Scissor") {
       if (comp_choice === "Paper") {
-        msg = "Congratulations, You Won !";
+        msg += "Congratulations, You Won !";
         user_win++;
         prop_msg.style.color = "#69B578";
       } else {
-        msg = "Opps, You Lose !";
+        msg += "Opps, You Lose !";
         bot_win++;
       }
     } else {
       if (comp_choice === "Rock") {
-        msg = "Congratulations, You Won !";
+        msg += "Congratulations, You Won !";
         user_win++;
         prop_msg.style.color = "#69B578";
       } else {
-        msg = "Opps, You Lose !";
+        msg += "Opps, You Lose !";
         bot_win++;
       }
     }
