@@ -63,11 +63,12 @@ input {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 #trials-cont {
   color: #b0db43;
+  font-size: 35px;
 }
 
 #butt2 {
@@ -101,6 +102,14 @@ input {
     font-size: 24px;
   }
 
+  .trials {
+    margin-bottom: 50px;
+  }
+  
+  #trials-cont {
+    font-size: 50px;
+  }
+
   input{  
     height: 90px;
     width: 350px;
@@ -125,6 +134,14 @@ input {
   .interface{
     margin-top: 47px;
   }
+
+  .trials {
+    margin-bottom: 20px;
+  }
+  
+  #trials-cont {
+    font-size: 26px;
+  }
   
 }
 
@@ -136,6 +153,14 @@ input {
 
   .interface{
     margin-top: 47px;
+  }
+
+  .trials {
+    margin-bottom: 5px;
+  }
+  
+  #trials-cont {
+    font-size: 22px;
   }
 
   input{  
@@ -169,6 +194,14 @@ input {
     height: 41px;
     width: 217px;
     font-size: 25px;
+  }
+
+  .trials {
+    margin-bottom: 0px;
+  }
+  
+  #trials-cont {
+    font-size: 20px;
   }
 
   #butt , #butt3 {

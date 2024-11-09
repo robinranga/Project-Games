@@ -141,6 +141,19 @@ button {
     padding: 24px;
   }
   
+#prop-msg {
+  padding: 34px ;
+  font-size: 60px;
+}
+
+button{
+  height: 70px;
+  width: 217px;
+  border-radius: 25px;
+  font-size: 30px;
+  margin-bottom: 33px;
+}
+  
   
 
   #img1,
@@ -172,6 +185,19 @@ button {
   #img2,
   #img3 {
     font-size: 35px;
+  }
+
+
+  #prop-msg {
+    padding: 20px ;
+  }
+  
+  button{
+    height: 59px;
+    width: 195px;
+    border-radius: 19px;
+    font-size: 28px;
+    margin-bottom: 17px;
   }
 
   #instr {
@@ -207,6 +233,20 @@ button {
   #img2,
   #img3 {
     font-size: 25px;
+  }
+
+
+  #prop-msg {
+    font-size: 33px;
+    padding: 9px;
+  }
+  
+  button{
+    height: 50px;
+    width: 161px;
+    border-radius: 17px;
+    font-size: 24px;
+    margin-bottom: 2px;
   }
 
   #instr {
@@ -286,6 +326,19 @@ button {
   #img2,
   #img3 {
     font-size: 20px;
+  }
+
+  #prop-msg {
+    font-size: 24px;
+    padding: 11px;
+  }
+  
+  button{
+    height: 44px;
+    width: 146px;
+    border-radius: 17px;
+    font-size: 20px;
+    margin-bottom: 2px;
   }
 
   #instr {
